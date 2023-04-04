@@ -1,0 +1,87 @@
+button {
+    cursor: pointer;
+    padding: 0.656rem 0.75rem;
+    border-radius: var(--radius);
+
+    color: var(--white-fixed);
+    font-size: var(--fs-text-2);
+    font-weight: 600;
+    line-height: var(--lh-text-2-3);
+}
+
+.primary-button {
+    background-color: var(--brand-1);
+}
+
+.primary-button:hover {
+    background-color: var(--brand-2);
+}
+
+
+.grey-button {
+    background-color: var(--grey-1);
+}
+
+.grey-button:hover {
+    background-color: var(--grey-0);
+}
+
+
+.white-button {
+    background-color: var(--white-fixed);
+    color: var(--grey-1);
+}
+
+.white-button:hover {
+    background-color: var(--grey-5);
+}
+
+
+.follow-button {
+    background-color: var(--white-fixed);
+    border: 1px solid var(--grey-0);
+    color: var(--grey-0);
+}
+
+.follow-button:hover {
+    background-color: var(--brand-3);
+    border: 1px solid var(--brand-1);
+    color: var(--brand-1);
+}
+
+.follow-button:active {
+    background-color: var(--brand-1);
+    border: 1px solid var(--brand-1);
+    color: var(--white-fixed);
+}
+
+
+.disable-button {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 400;
+
+    background-color: var(--grey-5);
+    color: var(--grey-3);
+    border-radius: 50%;
+}
+
+
+.like-button {
+    background-color: var(--white-fixed);
+    position: relative;
+}
+
+.like-button > span {
+    color: #000000;
+    width: 400;
+    font-size: .875rem;
+}
+
+.like {
+    position: absolute;
+}
+
+.unlike {
+    position: absolute;
+}

@@ -1,13 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- script -->
+    <script src="./src/scripts/index.js" defer></script>
 
     <!-- CSS -->
     <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/globalStyles.css">
+    <link rel="stylesheet" href="src/styles/button.css">
     <link rel="stylesheet" href="./src/styles/index.css" />
+
 
     <!-- FONTE -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,5 +24,317 @@
 
     <title>Criando rede social</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header__container">
+      <img src="./src/assets/img/logo.svg" alt="">
+      <button class="grey-button">Sair</button>
+    </header>
+
+    <main>
+      <div class="main__container">
+        <div>
+          <section class="section__container">
+          <div class="user__item">
+            <div class="user__img">
+              <img src="./src/assets/img/user1.svg" alt="foto samuel">          
+            </div>
+            <div class="user__info">
+              <h2>Samuel Leão</h2>
+              <p>Front end Enginer</p>
+            </div>
+          </div>
+          <div class="input__container">
+            <input id="input__title" type="text" placeholder="Digitar título do post">
+            <input id="input__text" type="text" placeholder="Digitar descrição do post">
+
+            <button class="primary-button">Postar</button>
+          </div>
+          </section>
+
+          <aside class="aside__container">
+          <h3 class="title-2">Sugestões para você seguir</h3>
+          <ul class="list__user">
+            <li>
+              <div class="user__item">
+                <div class="user__img">
+                  <img src="./src/assets/img/user3.svg" alt="foto Carlos">          
+                </div>
+                <div class="user__info">
+                  <h2>Carlos Lima</h2>
+                  <p>UX e UI Desginer</p>
+                </div>
+              </div>
+                <button class="follow follow-button">Seguir</button>
+            </li>
+              
+            <li>
+              <div class="user__item">
+                <div class="user__img">
+                  <img src="./src/assets/img/user6.svg" alt="foto Larissa">          
+                </div>
+                <div class="user__info">
+                  <h2>Larissa Camargo</h2>
+                  <p>UI Developer</p>
+                </div>
+              </div>
+                <button class="follow follow-button">Seguir</button>
+            </li>
+
+            <li>
+              <div class="user__item">
+                <div class="user__img">
+                  <img src="./src/assets/img/user7.svg" alt="foto Felipe">          
+                </div>
+                <div class="user__info">
+                  <h2>Filipe Gutierry</h2>
+                  <p>Full Stack Developer</p>
+                </div>
+              </div>
+                <button class="follow follow-button">Seguir</button>
+            </li>
+          </ul>
+          </aside>
+        </div>
+
+
+        <section class="posts__container">
+            <h1 class="title-1">Posts</h1>
+            <ul>
+              <li>
+                <div class="user__item">
+                  <div class="user__img">
+                    <img src="./src/assets/img/user1.svg" alt="foto Samuel">          
+                  </div>
+                  <div class="user__info">
+                    <h2>Samuel Leão</h2>
+                    <p>Front end Engineer</p>
+                  </div>
+                </div>
+                <div class="text__container">
+                  <h2 class="title-1">
+                    Como criar um interface simples e agradável utilizando boas práticas de design              
+                  </h2>
+                  <p class="text-1">
+                    Hoje vamos conversar sobre como criar uma interface agradável mesmo sem ter um design pronto feito por um profissional de UI design.              
+                  </p>
+                </div>
+                <div class="button__container">
+                  <button class="grey-button button__modal">Abrir Post</button>
+                  <button class="like-button">
+                    <img src="./src/assets/img/Vector.svg" alt="like" class="unlike">
+                    <img src="./src/assets/img/like-red.svg" alt="like red" class="like hide">
+                  </button>
+                  <span class="count-likes">25</span>
+                </div>
+              </li>
+
+              <dialog class="modal__container">
+                <div class="modal__item">
+                    <div class="user__item">
+                      <div class="user__img">
+                        <img src="./src/assets/img/user1.svg" alt="foto Samuel">         
+                      </div>
+                      <div class="user__info">
+                        <h2>Samuel Persuhn</h2>
+                        <p>Front end Engineer</p>
+                      </div>
+                    </div>
+                  <button class="disable-button close__modal">X</button>
+
+                  <div class="text__container">
+                    <h2 class="title-1">
+                      Como criar um interface simples e agradável utilizando boas práticas de design
+                    </h2>
+                    <p class="text-1">
+                      Hoje vamos conversar sobre como criar uma interface agradável mesmo sem ter um design pronto feito por um profissional de UI design.
+                    </p>
+                    <p class="text-1">
+                      Antes de iniciar a criação de qualquer projeto, busque referências de aplicações que tenham a ver com o nicho que você está desenvolvendo. Por exemplo, quando quero criar um e-commerce de roupas, vou reservar um momento para buscar por aplicações do gênero, tanto acessando ou baixando apps e vendo o que se repete de informações em cada um dos aplicativos e sites referentes a compra de roupas, e também, observar cores que normalmente você enxerga em cada um dos apps.
+                    </p>
+                  </div>
+                </div>
+              </dialog>
+
+              <li>
+                <div class="user__item">
+                  <div class="user__img">
+                    <img src="./src/assets/img/user2.svg" alt="foto Samuel">          
+                  </div>
+                  <div class="user__info">
+                    <h2>Samuel Persuhn</h2>
+                    <p>Front end Engineer</p>
+                  </div>
+                </div>
+                <div class="text__container">
+                  <h2 class="title-1">
+                    Empresa de Tecnologia da Informação abre vagas para programa de estágio              
+                  </h2>
+                  <p class="text-1">
+                    A Generic Digital, empresa natalence especializada em Tecnologia da Informação, irá iniciar o seu sexto programa de estágio, com o prazo de inscrições entre os dias 10 e 28 de agosto.               
+                  </p>
+                </div>
+                <div class="button__container">
+                  <button class="grey-button button__modal">Abrir Post</button>
+                  <button class="like-button">
+                    <img src="./src/assets/img/Vector.svg" alt="like" class="unlike">
+                    <img src="./src/assets/img/like-red.svg" alt="like red" class="like hide">
+                  </button>
+                  <span class="count-likes">25</span>
+                </div>
+              </li>
+
+              <dialog class="modal__container">
+                <div class="modal__item">
+                    <div class="user__item">
+                      <div class="user__img">
+                        <img src="./src/assets/img/user2.svg" alt="foto Samuel">      
+                      </div>
+                    <div class="user__info">
+                      <h2>Samuel Persuhn</h2>
+                      <p>Front end Engineer</p>
+                    </div>
+                    </div>
+                  <button class="disable-button close__modal">X</button>
+
+                  <div class="text__container">
+                    <h2 class="title-1">
+                      Empresa de Tecnologia da Informação abre vagas para programa de estágio              
+                    </h2>
+                    <p class="text-1">
+                      A Generic Digital, empresa natalence especializada em Tecnologia da Informação, irá iniciar o seu sexto programa de estágio, com o prazo de inscrições entre os dias 10 e 28 de agosto. 
+                    </p>
+                    <p class="text-1">
+                      O programa é conhecido como Generic Wars, com inspiração nos filmes Star Wars. Nas histórias, os iniciantes fazem treinamentos para se tornar cavaleiros Jedi, que compõem o lado bom da força.
+                    </p>
+                    <p class="text-1">
+                      A empresa explica que este princípio também é aplicado na empresa, em que a ideia é desenvolver talentos na área de tecnologia que vão aprender, desde cedo, a colocar a mão na massa, atuando diretamente com clientes nacionais e internacionais.
+                    </p>
+                  </div>
+                </div>
+              </dialog>
+              
+              <li>
+                <div class="user__item">
+                  <div class="user__img">
+                    <img src="./src/assets/img/user4.svg" alt="foto Carla">          
+                  </div>
+                  <div class="user__info">
+                    <h2>Carla Maria</h2>
+                    <p>Back end Engineer</p>
+                  </div>
+                </div>
+                <div class="text__container">
+                  <h2 class="title-1">
+                    Como melhorar sua lógica de programação? Desenvolvemos 5 passos para te ajudar
+                  </h2>
+                  <p class="text-1">
+                    Para quem está começando na área de T.I, em pleno século 21 este conceito pode parecer um grande desafio, pois requer muitas habilidades em diversas áreas de estudo, principalmente...
+                  </p>
+                </div>
+                <div class="button__container">
+                  <button class="grey-button button__modal">Abrir Post</button>
+                  <button class="like-button">
+                    <img src="./src/assets/img/Vector.svg" alt="like" class="unlike">
+                    <img src="./src/assets/img/like-red.svg" alt="like red" class="like hide">
+                  </button>
+                  <span class="count-likes">19</span>
+                </div>
+              </li>
+
+              <dialog class="modal__container">
+                <div class="modal__item">
+                    <div class="user__item">
+                        <div class="user__img">
+                          <img src="./src/assets/img/user4.svg" alt="foto Carla">            
+                        </div>
+                      <div class="user__info">
+                        <h2>Carla Maria</h2>
+                        <p>Back end Engineer</p>
+                      </div>
+                    </div>
+                  <button class="disable-button close__modal">X</button>
+
+                  <div class="text__container">
+                    <h2 class="title-1">
+                      Como melhorar sua lógica de programação? Desenvolvemos 5 passos para te ajudar
+                    </h2>
+                    <p class="text-1">
+                      Para quem está começando na área de T.I, em pleno século 21 este conceito pode parecer um grande desafio, pois requer muitas habilidades em diversas áreas de estudo, principalmente lógica
+                    </p>
+                    <p class="text-1">
+                      Como já informado, algoritmos são um conjunto de passos definidos para gerar um resultado. Aprender o conceito de instruções simples é a primeira etapa para compreender lógica de programação. No seu dia a dia você já aplicou um algoritmo e não percebeu. Como exemplo temos a instrução “escovar os dentes”:
+                    </p>
+                    <p class="text-1">
+                      - Pegar escova;
+                      - Ligar torneira
+                      - Limpar escova;
+                      - Fechar torneira;
+                      - Colocar pasta na escova;
+                      - Escovar os dentes;
+                    </p>
+                  </div>
+                </div>
+              </dialog>
+
+              <li>
+                <div class="user__item">
+                  <div class="user__img">
+                    <img src="./src/assets/img/user5.svg" alt="foto Julia">          
+                  </div>
+                  <div class="user__info">
+                    <h2>Júlia Martins</h2>
+                    <p>Devop's</p>
+                  </div>
+                </div>
+                <div class="text__container">
+                  <h2 class="title-1">
+                    NextJS como essa ferramenta revolucionou a maneira de desenvolver sites
+                  </h2>
+                  <p class="text-1">
+                    Provavelmente, você já ouviu falar do Next.js, considerado o framework mais popular do mercado. Com a expansão do mercado de tecnologia e sua influência em serviços de diver...
+                  </p>
+                </div>
+                <div class="button__container">
+                  <button class="grey-button button__modal">Abrir Post</button>
+                  <button class="like-button">
+                    <img src="./src/assets/img/Vector.svg" alt="like" class="unlike">
+                    <img src="./src/assets/img/like-red.svg" alt="like red" class="like hide">
+                  </button>
+                  <span class="count-likes">8</span>
+                </div>
+              </li>
+
+              <dialog class="modal__container">
+                <div class="modal__item">
+                    <div class="user__item">
+                      <div class="user__img">
+                        <img src="./src/assets/img/user5.svg" alt="foto Julia">     
+                      </div>
+                    <div class="user__info">
+                      <h2>Júlia Martins</h2>
+                      <p>Devop's</p>
+                    </div>
+                    </div>
+                  <button class="disable-button close__modal">X</button>
+
+                  <div class="text__container">
+                    <h2 class="title-1">
+                      NextJS como essa ferramenta revolucionou a maneira de desenvolver sites
+                    </h2>
+                    <p class="text-1">
+                      Provavelmente, você já ouviu falar do Next.js, considerado o framework mais popular do mercado. Com a expansão do mercado de tecnologia e sua influência em serviços de diversos segmentos                  
+                    </p>
+                    <p class="text-1">
+                      Para tornar o carregamento de páginas mais rápido, o Next.js quebra o código automaticamente e é assim que assegura uma capacidade de carregamento de página mais rápida, já que os sites são criados para suportar um grande volume de acessos.
+                    </p>
+                  </div>
+                </div>
+              </dialog>
+
+            </ul>
+        </section>
+      </div>
+    </main>
+    
+  </body>
 </html>

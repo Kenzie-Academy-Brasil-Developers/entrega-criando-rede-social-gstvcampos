@@ -1,0 +1,186 @@
+main {
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+}
+
+.hide {
+    display: none;
+}
+
+/* HEADER */
+.header__container {
+    background-color: var(--grey-1);
+    padding: 1.25rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+/* SECTION POST */
+.section__container {
+    display: flex;
+    flex-direction: column;
+
+    width: 713px;
+    max-width: 100%;
+    margin: 3rem 0;
+    gap: 2.5rem;
+}
+
+.input__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.375rem;
+}
+
+input {
+    border-radius: var(--radius);
+    border: 2px solid var(--grey-4);
+}
+
+#input__title {
+    height: 52px;
+}
+
+#input__text {
+    height: 130px;
+}
+
+.input__container > button {
+    align-self: flex-end;
+}
+
+/* suggestions to follow (aside)*/
+
+.aside__container {
+    display: flex;
+    gap: 3.813rem;
+    flex-direction: column;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-bottom: 50px;
+}
+
+.user__item {
+    margin-bottom: 1.25rem;
+
+}
+
+.list__user {
+    display: flex;
+    gap: 3.813rem;
+}
+
+/* Posts */
+
+.posts__container {
+    display: flex;
+    flex-direction: column;
+    gap: 3.25rem;
+}
+
+.posts__container > ul {
+    display: flex;
+    flex-direction: column;
+
+    width: 713px;
+    max-width: 100%;
+    gap: 3.25rem;
+}
+
+.posts__container > ul > li {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.text__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.button__container {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.button__container > button__modal {
+    margin-right: 2rem;
+}
+
+.like-button {
+    margin-bottom: 1.25rem;
+}
+
+/* modal */
+.modal__container {
+    border: none;
+    border-radius: var(--radius);
+    margin-top: 100px;
+}
+
+.modal__item {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2.5rem 1.5rem;
+    width: 761px;
+    max-width: 100%;
+}
+
+.close__modal {
+    position: absolute;
+    right: .9375rem;
+    top: .6875rem;
+}
+
+/*  */
+
+
+
+@media (min-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .main__container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+@media (min-width: 1023px) {
+
+    .main__container > div {
+        display: flex;
+        gap: 7.5rem;
+        margin: 3rem 0;
+    }
+    .aside__container {
+        width: 350px;
+        max-width: 100%;
+    }
+
+    .list__user {
+        flex-direction: column;
+    }
+
+    .user__item {
+        width: 250px;
+        max-width: 100%;
+    }
+
+    
+    .list__user > li {
+        display: flex;
+        align-items: center;
+    }
+
+}
