@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- script -->
-    <script src="./src/scripts/index.js" defer></script>
+    <script type="module" src="./src/scripts/index.js" defer></script>
 
     <!-- CSS -->
     <link rel="stylesheet" href="./src/styles/reset.css" />
@@ -26,15 +26,17 @@
   </head>
   <body>
     <header class="header__container">
-      <img src="./src/assets/img/logo.svg" alt="">
-      <button class="grey-button">Sair</button>
+      <div class="item__header">
+        <img src="./src/assets/img/logo.svg" alt="">
+        <button class="grey-button">Sair</button>
+      </div>
     </header>
 
     <main>
       <div class="main__container">
         <div>
           <section class="section__container">
-          <div class="user__item">
+          <figcaption class="user__item">
             <div class="user__img">
               <img src="./src/assets/img/user1.svg" alt="foto samuel">          
             </div>
@@ -42,7 +44,7 @@
               <h2>Samuel Leão</h2>
               <p>Front end Enginer</p>
             </div>
-          </div>
+          </figcaption>
           <div class="input__container">
             <input id="input__title" type="text" placeholder="Digitar título do post">
             <input id="input__text" type="text" placeholder="Digitar descrição do post">
@@ -52,47 +54,10 @@
           </section>
 
           <aside class="aside__container">
-          <h3 class="title-2">Sugestões para você seguir</h3>
-          <ul class="list__user">
-            <li>
-              <div class="user__item">
-                <div class="user__img">
-                  <img src="./src/assets/img/user3.svg" alt="foto Carlos">          
-                </div>
-                <div class="user__info">
-                  <h2>Carlos Lima</h2>
-                  <p>UX e UI Desginer</p>
-                </div>
-              </div>
-                <button class="follow follow-button">Seguir</button>
-            </li>
-              
-            <li>
-              <div class="user__item">
-                <div class="user__img">
-                  <img src="./src/assets/img/user6.svg" alt="foto Larissa">          
-                </div>
-                <div class="user__info">
-                  <h2>Larissa Camargo</h2>
-                  <p>UI Developer</p>
-                </div>
-              </div>
-                <button class="follow follow-button">Seguir</button>
-            </li>
-
-            <li>
-              <div class="user__item">
-                <div class="user__img">
-                  <img src="./src/assets/img/user7.svg" alt="foto Felipe">          
-                </div>
-                <div class="user__info">
-                  <h2>Filipe Gutierry</h2>
-                  <p>Full Stack Developer</p>
-                </div>
-              </div>
-                <button class="follow follow-button">Seguir</button>
-            </li>
-          </ul>
+            <h3 class="title-2">Sugestões para você seguir</h3>
+            <ul class="list__user">
+              <!-- LISTA DE SUGESTÕES -->
+            </ul>
           </aside>
         </div>
 
