@@ -26,8 +26,9 @@ main {
     max-width: 1200px;
 
     width: 100%;
-    max-width: 1150px;
+    max-width: 1160px;
 }
+
 
 /* SECTION POST */
 .section__container {
@@ -51,10 +52,6 @@ input {
     border-radius: var(--radius);
     border: 2px solid var(--grey-4);
 
-
-
-    word-wrap: break-word;
-    overflow-wrap: break-word;
 }
 
 #input__title {
@@ -166,7 +163,11 @@ input {
         max-width: 100%;
     }
 }
-
+@media (min-width: 600px) {
+    .item__header {
+        width: 90%;
+    }
+}
 
 @media (min-width: 1200px) {
 
@@ -204,7 +205,8 @@ input {
     
     .list__user > li {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
+        justify-content: space-between;
     }
 
 }
