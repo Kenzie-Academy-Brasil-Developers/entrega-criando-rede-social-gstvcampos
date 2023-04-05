@@ -108,6 +108,47 @@ function createUserItem(user) {
     return figure
 }
 
+function createPostText(title, text) {
+    const textContainer = document.createElement('div')
+    const h2 = document.createElement('h2')
+    const p = document.createElement('p')
+
+    textContainer.classList.add('text__container')
+    h2.classList.add('title-1')
+    p.classList.add('text-1')
+
+    h2.innerText = title
+    p.innerText = text
+
+    textContainer.append(h2, p)
+
+    return textContainer
+}
+
+function createButtonPost() {
+    const div = document.createElement('div')
+    const openPost = document.createElement('button')
+    const like = document.createElement('button')
+
+
+}
+
+function addPosts(array) {
+    const section = document.querySelector('posts__container')
+
+    const h1 = document.createElement('h1')
+    const ul = document.createElement('ul')
+
+    for (let i = 0; i < array.length; i++) {
+        const li = document.createElement('li')
+        const userItem = createUserItem(array[i])
+        const text = createPostText(array[i].title, array[i].text)
+
+
+
+    }
+}
+
 createSuggestUsers(suggestUsers)
 
 like()

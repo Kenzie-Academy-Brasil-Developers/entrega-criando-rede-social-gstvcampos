@@ -23,6 +23,7 @@ main {
 .item__header {
     display: flex;
     justify-content: space-between;
+    max-width: 1200px;
 
     width: 100%;
     max-width: 1150px;
@@ -49,21 +50,20 @@ main {
 input {
     border-radius: var(--radius);
     border: 2px solid var(--grey-4);
+
+
+
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 #input__title {
     height: 52px;
-}
-
-#input__title::placeholder {
     padding: 1.25rem;
 }
 
 #input__text {
     height: 130px;
-}
-
-#input__text::placeholder {
     padding: 1.3125rem;
 }
 
@@ -137,9 +137,9 @@ input {
 
 /* modal */
 .modal__container {
+    margin: 100px 20px 20px 20px;
     border: none;
     border-radius: var(--radius);
-    margin-top: 100px;
 }
 
 .modal__item {
@@ -147,8 +147,6 @@ input {
     flex-direction: column;
     gap: 2rem;
     padding: 2.5rem 1.5rem;
-    width: 761px;
-    max-width: 100%;
 }
 
 .close__modal {
@@ -158,6 +156,20 @@ input {
 }
 
 /*  */
+@media (min-width: 840px) {
+    .modal__container {
+        margin: 100px auto;
+    }
+    
+    .modal__item {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2.5rem 1.5rem;
+        width: 761px;
+        max-width: 100%;
+    }
+}
 
 
 @media (min-width: 1200px) {
